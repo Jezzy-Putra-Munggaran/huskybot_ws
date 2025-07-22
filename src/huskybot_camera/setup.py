@@ -18,8 +18,7 @@ def validate_critical_files():  # Fungsi untuk validasi file-file penting sebelu
     
     # Optional files - tidak wajib ada, tapi dicek
     optional_files = [
-        'launch/multicamera.launch.py',  # Launch file utama multicamera
-        'launch/camera.launch.py',  # Launch file fallback/individual camera
+        'launch/camera.launch.py',  # Launch file individual camera
     ]
     
     missing_files = []  # List file yang tidak ditemukan
@@ -67,7 +66,7 @@ config_files = glob('config/*.yaml') if os.path.isdir('config') else []  # Cari 
 
 # ===================== COLLECT LAUNCH FILES =====================
 launch_files = []  # List untuk launch files yang ada
-potential_launch_files = ['launch/multicamera.launch.py', 'launch/camera.launch.py']
+potential_launch_files = ['launch/camera.launch.py']
 for launch_file in potential_launch_files:
     if os.path.exists(launch_file):
         launch_files.append(launch_file)
@@ -150,12 +149,12 @@ if __name__ == '__main__':  # Jika file ini dijalankan langsung
     print("Langkah selanjutnya:")
     print(f"1. Build package: 'colcon build --packages-select {package_name}'")
     print(f"2. Source workspace: 'source install/setup.bash'")
-    print(f"3. Jalankan dengan: 'ros2 launch {package_name} multicamera.launch.py'\n")
+    print(f"3. Jalankan dengan: 'ros2 launch {package_name} camera.launch.py'\n")
 
     # Verifikasi konfigurasi launch file
     try:
         from launch.frontend import Parser  # Import parser untuk memvalidasi launch file
-        for launch_file in ['launch/multicamera.launch.py', 'launch/camera.launch.py']:
+        for launch_file in ['launch/camera.launch.py']:
             if os.path.exists(launch_file):
                 print(f"[INFO] Memvalidasi launch file: {launch_file}")
                 # Bisa tambahkan validasi syntax/parse di sini jika perlu
