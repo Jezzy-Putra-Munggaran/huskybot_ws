@@ -18,7 +18,7 @@ def generate_launch_description():
     # Launch arguments
     model_path_arg = DeclareLaunchArgument(
         'model_path',
-        default_value='/home/jezzy/huskybot_ws/models/yolo11m-seg.engine',
+        default_value=os.path.join(os.path.expanduser('~'), 'jezzy', 'huskybot_ws', 'models', 'yolo11m-seg.engine'),
         description='Path to TensorRT model file'
     )
     
@@ -171,11 +171,15 @@ def generate_launch_description():
     )
     
     # RViz2 Visualization
+    rviz_config_path = os.path.join(
+        os.path.dirname(os.path.realpath(__file__)), 
+        '..', 'config', 'ultra_visualization.rviz'
+    )
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
         name='rviz2',
-        arguments=['-d', '/home/jezzy/huskybot_ws/src/huskybot_deepstream_ultra/config/ultra_visualization.rviz'],
+        arguments=['-d', rviz_config_path],
         output='screen',
         condition=IfCondition(LaunchConfiguration('enable_visualization'))
     )

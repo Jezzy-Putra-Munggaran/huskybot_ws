@@ -116,8 +116,12 @@ check_dependencies() {
 setup_workspace() {
     print_header "Setting up Workspace..."
     
-    # Navigate to workspace
-    cd /home/jezzy/huskybot_ws
+    # Navigate to workspace root (detect automatically)
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    export WORKSPACE_ROOT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+    
+    print_status "Detected workspace root: $WORKSPACE_ROOT"
+    cd "$WORKSPACE_ROOT"
     
     # Source ROS2
     source /opt/ros/humble/setup.bash
@@ -156,14 +160,15 @@ build_packages() {
 convert_model() {
     print_header "Converting YOLO Model to TensorRT..."
     
-    # Create models directory
-    mkdir -p /home/jezzy/huskybot_ws/models
+    # Create models directory relative to workspace
+    MODELS_DIR="$WORKSPACE_ROOT/models"
+    mkdir -p "$MODELS_DIR"
     
     # Source the workspace
     source install/setup.bash
     
     # Check if model already exists
-    if [ -f "/home/jezzy/huskybot_ws/models/yolo11m-seg.engine" ]; then
+    if [ -f "$MODELS_DIR/yolo11m-seg.engine" ]; then
         print_warning "⚠️ TensorRT model already exists"
         read -p "Reconvert? (y/N): " -n 1 -r
         echo
@@ -176,7 +181,7 @@ convert_model() {
     print_status "Converting YOLOv11m-seg to TensorRT..."
     python3 src/huskybot_deepstream_ultra/huskybot_deepstream_ultra/tensorrt_converter.py \
         --model yolo11m-seg.pt \
-        --output /home/jezzy/huskybot_ws/models/yolo11m-seg.engine \
+        --output "$MODELS_DIR/yolo11m-seg.engine" \
         --precision FP16 \
         --workspace 4096
     
@@ -304,7 +309,7 @@ main() {
     check_jetson
     optimize_jetson
     check_dependencies
-    setup_workspace
+    setup_workspace  # This sets WORKSPACE_ROOT global variable
     
     if [ "$CLEAN_BUILD" = true ]; then
         build_packages clean

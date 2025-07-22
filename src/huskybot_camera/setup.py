@@ -75,9 +75,9 @@ for launch_file in potential_launch_files:
         launch_files.append(launch_file)
 
 if not launch_files:
-    print("[WARNING] Tidak ada launch files ditemukan di folder launch/")
+    pass  # Tidak print apa-apa untuk menghindari output yang mengganggu colcon
 else:
-    print(f"[INFO] Launch files ditemukan: {launch_files}")
+    pass  # print(f"[INFO] Launch files ditemukan: {launch_files}")
 
 # ===================== ERROR HANDLING: VALIDASI DEPENDENCY PYTHON =====================
 def validate_python_dependencies():  # Fungsi untuk validasi dependency Python utama
