@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing huskybot_multicam_parallel.egg-info/PKG-INFO
+writing dependency_links to huskybot_multicam_parallel.egg-info/dependency_links.txt
+writing entry points to huskybot_multicam_parallel.egg-info/entry_points.txt
+writing requirements to huskybot_multicam_parallel.egg-info/requires.txt
+writing top-level names to huskybot_multicam_parallel.egg-info/top_level.txt
+reading manifest file 'huskybot_multicam_parallel.egg-info/SOURCES.txt'
+writing manifest file 'huskybot_multicam_parallel.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/python3.10/site-packages/huskybot-multicam-parallel.egg-link (link to .)
+Installing multicam_parallel_node script to /home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/huskybot_multicam_parallel
+Installing single_camera_processor script to /home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/huskybot_multicam_parallel
+
+Installed /home/jezzy/huskybot_ws/build/huskybot_multicam_parallel
+running symlink_data

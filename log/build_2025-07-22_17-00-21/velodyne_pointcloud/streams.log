@@ -1,0 +1,153 @@
+[0.512s] Invoking command in '/home/jezzy/huskybot_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk:/home/jezzy/husky_ws/lintic/install/yolosed:/home/jezzy/husky_ws/lintic/install/visual:/home/jezzy/husky_ws/lintic/install/segnet:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example:/home/jezzy/husky_ws/turtlebot3/install/segtect:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration:/opt/ros/humble LD_LIBRARY_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib PYTHONPATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jezzy/huskybot_ws/src/velodyne/velodyne_pointcloud -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jezzy/huskybot_ws/install/velodyne_pointcloud
+[1.107s] -- The C compiler identification is GNU 11.4.0
+[2.618s] -- The CXX compiler identification is GNU 11.4.0
+[3.443s] -- Detecting C compiler ABI info
+[4.063s] -- Detecting C compiler ABI info - done
+[4.090s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.092s] -- Detecting C compile features
+[4.094s] -- Detecting C compile features - done
+[4.102s] -- Detecting CXX compiler ABI info
+[4.767s] -- Detecting CXX compiler ABI info - done
+[4.815s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.816s] -- Detecting CXX compile features
+[4.818s] -- Detecting CXX compile features - done
+[4.834s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.388s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.727s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.958s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[5.980s] -- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[6.757s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.786s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.834s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.877s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.966s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.434s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.452s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.365s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[13.576s] -- Found FastRTPS: /opt/ros/humble/include  
+[18.898s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[19.004s] -- Looking for pthread.h
+[19.721s] -- Looking for pthread.h - found
+[19.725s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[20.526s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[20.530s] -- Found Threads: TRUE  
+[21.013s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[21.104s] -- Found message_filters: 4.3.7 (/opt/ros/humble/share/message_filters/cmake)
+[21.168s] -- Checking for module 'eigen3'
+[21.230s] --   Found eigen3, version 3.4.0
+[21.409s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[21.410s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[21.576s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[21.587s] -- looking for PCL_COMMON
+[21.590s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[21.592s] -- Found PCL: pcl_common;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization  
+[21.606s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[21.806s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[21.877s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[21.909s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[22.248s] -- Found velodyne_msgs: 2.5.1 (/home/jezzy/huskybot_ws/install/velodyne_msgs/share/velodyne_msgs/cmake)
+[22.357s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[22.845s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[22.928s] -- Added test 'copyright' to check source files copyright and LICENSE
+[22.967s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[22.970s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jezzy/huskybot_ws/src/velodyne/velodyne_pointcloud/include>
+[22.975s] -- Configured cppcheck exclude dirs and/or files: 
+[23.010s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[23.011s] -- Configured cpplint exclude dirs and/or files: 
+[23.028s] -- Added test 'flake8' to check Python code syntax and style conventions
+[23.038s] -- Added test 'lint_cmake' to check CMake code style
+[23.044s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[23.068s] -- Added test 'uncrustify' to check C / C++ code style
+[23.069s] -- Configured uncrustify additional arguments: 
+[23.104s] -- Configuring done
+[23.446s] -- Generating done
+[23.506s] -- Build files have been written to: /home/jezzy/huskybot_ws/build/velodyne_pointcloud
+[23.564s] Invoked command in '/home/jezzy/huskybot_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk:/home/jezzy/husky_ws/lintic/install/yolosed:/home/jezzy/husky_ws/lintic/install/visual:/home/jezzy/husky_ws/lintic/install/segnet:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example:/home/jezzy/husky_ws/turtlebot3/install/segtect:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration:/opt/ros/humble LD_LIBRARY_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib PYTHONPATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jezzy/huskybot_ws/src/velodyne/velodyne_pointcloud -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jezzy/huskybot_ws/install/velodyne_pointcloud
+[23.580s] Invoking command in '/home/jezzy/huskybot_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk:/home/jezzy/husky_ws/lintic/install/yolosed:/home/jezzy/husky_ws/lintic/install/visual:/home/jezzy/husky_ws/lintic/install/segnet:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example:/home/jezzy/husky_ws/turtlebot3/install/segtect:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration:/opt/ros/humble LD_LIBRARY_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib PYTHONPATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jezzy/huskybot_ws/build/velodyne_pointcloud -- -j4 -l4
+[23.842s] [  5%] [32mBuilding CXX object CMakeFiles/velodyne_rawdata.dir/src/lib/rawdata.cpp.o[0m
+[23.901s] [ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[23.959s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[23.972s] [ 22%] [32mBuilding CXX object CMakeFiles/velodyne_cloud_types.dir/src/lib/pointcloudXYZIRT.cpp.o[0m
+[29.801s] [ 27%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[30.082s] [ 27%] Built target gtest_main
+[30.156s] [ 33%] [32mBuilding CXX object CMakeFiles/velodyne_cloud_types.dir/src/lib/organized_cloudXYZIRT.cpp.o[0m
+[56.813s] [ 38%] [32m[1mLinking CXX static library libgtest.a[0m
+[57.996s] [ 38%] Built target gtest
+[76.518s] [ 44%] [32mBuilding CXX object CMakeFiles/velodyne_rawdata.dir/src/lib/calibration.cpp.o[0m
+[77.922s] [ 50%] [32m[1mLinking CXX shared library libvelodyne_cloud_types.so[0m
+[79.053s] [ 50%] Built target velodyne_cloud_types
+[93.982s] [ 55%] [32m[1mLinking CXX shared library libvelodyne_rawdata.so[0m
+[94.907s] [ 55%] Built target velodyne_rawdata
+[95.088s] [ 61%] [32mBuilding CXX object tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o[0m
+[127.047s] [ 66%] [32m[1mLinking CXX executable test_row_step[0m
+[128.784s] [ 66%] Built target test_row_step
+[128.854s] [ 72%] [32mBuilding CXX object tests/CMakeFiles/test_calibration.dir/test_calibration.cpp.o[0m
+[133.723s] [ 77%] [32m[1mLinking CXX executable test_calibration[0m
+[135.260s] [ 77%] Built target test_calibration
+[135.431s] [ 83%] [32mBuilding CXX object CMakeFiles/transform.dir/src/conversions/transform.cpp.o[0m
+[186.370s] [ 88%] [32m[1mLinking CXX shared library libtransform.so[0m
+[188.563s] [ 88%] Built target transform
+[188.620s] [ 94%] [32mBuilding CXX object CMakeFiles/velodyne_transform_node.dir/src/conversions/transform_node.cpp.o[0m
+[205.679s] [100%] [32m[1mLinking CXX executable velodyne_transform_node[0m
+[207.197s] [100%] Built target velodyne_transform_node
+[207.231s] Invoked command in '/home/jezzy/huskybot_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk:/home/jezzy/husky_ws/lintic/install/yolosed:/home/jezzy/husky_ws/lintic/install/visual:/home/jezzy/husky_ws/lintic/install/segnet:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example:/home/jezzy/husky_ws/turtlebot3/install/segtect:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration:/opt/ros/humble LD_LIBRARY_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib PYTHONPATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jezzy/huskybot_ws/build/velodyne_pointcloud -- -j4 -l4
+[207.239s] Invoking command in '/home/jezzy/huskybot_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk:/home/jezzy/husky_ws/lintic/install/yolosed:/home/jezzy/husky_ws/lintic/install/visual:/home/jezzy/husky_ws/lintic/install/segnet:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example:/home/jezzy/husky_ws/turtlebot3/install/segtect:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration:/opt/ros/humble LD_LIBRARY_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib PYTHONPATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jezzy/huskybot_ws/build/velodyne_pointcloud
+[207.265s] -- Install configuration: ""
+[207.267s] -- Execute custom install script
+[207.269s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/lib/velodyne_pointcloud/velodyne_transform_node
+[207.305s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/calibration.hpp
+[207.329s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/datacontainerbase.hpp
+[207.351s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/organized_cloudXYZIRT.hpp
+[207.388s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/pointcloudXYZIRT.hpp
+[207.410s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/rawdata.hpp
+[207.439s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/transform.hpp
+[207.467s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP16-velodyne_transform_node-params.yaml
+[207.491s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP32C-velodyne_transform_node-params.yaml
+[207.512s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLS128-velodyne_transform_node-params.yaml
+[207.537s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-composed-launch.py
+[207.561s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-launch.py
+[207.585s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-composed-launch.py
+[207.608s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-launch.py
+[207.641s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLS128-composed-launch.py
+[207.673s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLS128-launch.py
+[207.703s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/32db.yaml
+[207.732s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s2.1-sztaki.yaml
+[207.753s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s3-xiesc.yaml
+[207.783s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_utexas.yaml
+[207.806s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16_hires_db.yaml
+[207.828s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16db.yaml
+[207.855s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLS128.yaml
+[207.881s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VeloView-VLP-32C.yaml
+[207.904s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/issue_84_float_intensities.yaml
+[207.928s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/rviz_points.vcg
+[207.951s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/library_path.sh
+[207.984s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/library_path.dsv
+[208.005s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/ament_index/resource_index/package_run_dependencies/velodyne_pointcloud
+[208.028s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/ament_index/resource_index/parent_prefix_path/velodyne_pointcloud
+[208.052s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.sh
+[208.092s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.dsv
+[208.114s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.sh
+[208.136s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.dsv
+[208.159s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.bash
+[208.186s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.sh
+[208.217s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.zsh
+[208.239s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.dsv
+[208.266s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv
+[208.290s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/ament_index/resource_index/packages/velodyne_pointcloud
+[208.314s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/ament_index/resource_index/rclcpp_components/velodyne_pointcloud
+[208.339s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_include_directories-extras.cmake
+[208.366s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_dependencies-extras.cmake
+[208.390s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_libraries-extras.cmake
+[208.415s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_targets-extras.cmake
+[208.440s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig.cmake
+[208.467s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig-version.cmake
+[208.489s] -- Symlinking: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.xml
+[208.512s] -- Installing: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/lib/libvelodyne_cloud_types.so
+[208.514s] -- Set runtime path of "/home/jezzy/huskybot_ws/install/velodyne_pointcloud/lib/libvelodyne_cloud_types.so" to ""
+[208.514s] -- Installing: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/lib/libvelodyne_rawdata.so
+[208.516s] -- Set runtime path of "/home/jezzy/huskybot_ws/install/velodyne_pointcloud/lib/libvelodyne_rawdata.so" to ""
+[208.517s] -- Installing: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/lib/libtransform.so
+[208.538s] -- Set runtime path of "/home/jezzy/huskybot_ws/install/velodyne_pointcloud/lib/libtransform.so" to ""
+[208.539s] -- Installing: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudExport.cmake
+[208.542s] -- Installing: /home/jezzy/huskybot_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudExport-noconfig.cmake
+[208.549s] Invoked command in '/home/jezzy/huskybot_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk:/home/jezzy/husky_ws/lintic/install/yolosed:/home/jezzy/husky_ws/lintic/install/visual:/home/jezzy/husky_ws/lintic/install/segnet:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example:/home/jezzy/husky_ws/turtlebot3/install/segtect:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration:/opt/ros/humble LD_LIBRARY_PATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/lib PYTHONPATH=/home/jezzy/huskybot_ws/install/velodyne_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jezzy/huskybot_ws/build/velodyne_pointcloud

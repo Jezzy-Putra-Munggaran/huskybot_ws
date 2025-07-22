@@ -1,0 +1,3 @@
+/home/jezzy/huskybot_ws/install/velodyne_laserscan/lib/libvelodyne_laserscan.so
+/home/jezzy/huskybot_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanExport.cmake
+/home/jezzy/huskybot_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanExport-noconfig.cmake

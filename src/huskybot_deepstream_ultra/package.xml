@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>huskybot_deepstream_ultra</name>
+  <version>1.0.0</version>
+  <description>
+    Ultra-High Performance DeepStream YOLO11 with TensorRT for 100+ FPS 
+    6-camera 360° segmentation on Jetson AGX Orin 32GB. 
+    Optimized pipeline for real-time object detection, segmentation, 
+    distance calculation, and 3D coordinates with perfect performance.
+  </description>
+
+  <maintainer email="mungguran.jezzy.putra@gmail.com">Jezzy Putra Munggaran</maintainer>
+  <license>MIT</license>
+
+  <url type="repository">https://github.com/Jezzy-Putra-Munggaran/Huskybot-with-360-Camera-and-Velodyne-VLP32-C</url>
+  <url type="bugtracker">https://github.com/Jezzy-Putra-Munggaran/Huskybot-with-360-Camera-and-Velodyne-VLP32-C/issues</url>
+
+  <author email="mungguran.jezzy.putra@gmail.com">Jezzy Putra Munggaran</author>
+
+  <!-- BUILD DEPENDENCIES -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- RUNTIME DEPENDENCIES -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>yolov12_msgs</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>huskybot_camera</exec_depend>
+
+  <!-- TEST DEPENDENCIES -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

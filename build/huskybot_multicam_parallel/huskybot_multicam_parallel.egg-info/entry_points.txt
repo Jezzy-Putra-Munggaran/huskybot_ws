@@ -1,0 +1,4 @@
+[console_scripts]
+multicam_parallel_node = huskybot_multicam_parallel.multicam_parallel_node:main
+single_camera_processor = huskybot_multicam_parallel.single_camera_processor:main
+

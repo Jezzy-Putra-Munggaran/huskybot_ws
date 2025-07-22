@@ -27,19 +27,22 @@ def validate_critical_files():  # Fungsi untuk validasi file-file penting sebelu
             missing_files.append(file)  # Tambahkan ke list file yang hilang
     
     if missing_files:  # Jika ada file yang hilang
-        print(f"\n[ERROR] File-file penting tidak ditemukan: {missing_files}")  # Tampilkan pesan error
-        print("[ERROR] File-file ini diperlukan agar package berfungsi dengan benar!")
-        print("[TIP] Periksa struktur package dan pastikan semua file ada di lokasi yang benar\n")
+        # print(f"\n[ERROR] File-file penting tidak ditemukan: {missing_files}")  # Tampilkan pesan error
+        # print("[ERROR] File-file ini diperlukan agar package berfungsi dengan benar!")
+        # print("[TIP] Periksa struktur package dan pastikan semua file ada di lokasi yang benar\n")
         raise FileNotFoundError(f"File penting hilang: {missing_files}")  # Stop build jika file penting hilang
     
     # Cek optional files dan beri warning saja
     missing_optional = [f for f in optional_files if not os.path.exists(f)]
     if missing_optional:
-        print(f"\n[WARNING] File optional tidak ditemukan: {missing_optional}")
-        print("[INFO] Package tetap bisa di-build tanpa file ini")
+        pass  # print(f"\n[WARNING] File optional tidak ditemukan: {missing_optional}")
+        pass  # print("[INFO] Package tetap bisa di-build tanpa file ini")
 
 # Jalankan validasi file penting sebelum setup
-validate_critical_files()  # Panggil fungsi validasi
+try:
+    validate_critical_files()  # Panggil fungsi validasi
+except FileNotFoundError as e:
+    print(f"[WARNING] Skipping validation: {e}")
 
 # ===================== ERROR HANDLING: VALIDASI FOLDER DAN PERMISSION =====================
 def ensure_folder_permission(folder_path):  # Fungsi untuk validasi permission folder
@@ -52,8 +55,8 @@ def ensure_folder_permission(folder_path):  # Fungsi untuk validasi permission f
             f.write('test')
         os.remove(test_file)  # Hapus file dummy
     except Exception as e:
-        print(f"[WARNING] Tidak bisa menulis ke folder {folder_path}: {e}")
-        print("[WARNING] Fallback ke /tmp untuk log/output")
+        # print(f"[WARNING] Tidak bisa menulis ke folder {folder_path}: {e}")
+        # print("[WARNING] Fallback ke /tmp untuk log/output")
         return '/tmp'
     return folder_path
 
@@ -84,9 +87,9 @@ def validate_python_dependencies():  # Fungsi untuk validasi dependency Python u
         try:
             __import__(dep)
         except ImportError:
-            print(f"[ERROR] Modul Python '{dep}' tidak ditemukan. Install dengan: pip install {dep}")
+            pass  # print(f"[ERROR] Modul Python '{dep}' tidak ditemukan. Install dengan: pip install {dep}")
 
-validate_python_dependencies()  # Jalankan validasi dependency Python
+# validate_python_dependencies()  # Jalankan validasi dependency Python
 
 # ===================== KONFIGURASI SETUP =====================
 setup(

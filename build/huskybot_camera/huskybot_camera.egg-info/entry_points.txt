@@ -1,0 +1,3 @@
+[console_scripts]
+multicamera_publisher = huskybot_camera.multicamera_publisher:main
+

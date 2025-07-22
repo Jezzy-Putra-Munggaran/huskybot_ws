@@ -1,0 +1,18 @@
+[9.463s] Invoking command in '/home/jezzy/huskybot_ws/build/huskybot_multicam_parallel': PYTHONPATH=/home/jezzy/huskybot_ws/build/huskybot_multicam_parallel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jezzy/huskybot_ws/build/huskybot_multicam_parallel/build --no-deps symlink_data
+[12.532s] running develop
+[14.452s] running egg_info
+[14.453s] writing huskybot_multicam_parallel.egg-info/PKG-INFO
+[14.454s] writing dependency_links to huskybot_multicam_parallel.egg-info/dependency_links.txt
+[14.455s] writing entry points to huskybot_multicam_parallel.egg-info/entry_points.txt
+[14.473s] writing requirements to huskybot_multicam_parallel.egg-info/requires.txt
+[14.473s] writing top-level names to huskybot_multicam_parallel.egg-info/top_level.txt
+[14.508s] reading manifest file 'huskybot_multicam_parallel.egg-info/SOURCES.txt'
+[14.508s] writing manifest file 'huskybot_multicam_parallel.egg-info/SOURCES.txt'
+[14.522s] running build_ext
+[14.523s] Creating /home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/python3.10/site-packages/huskybot-multicam-parallel.egg-link (link to .)
+[14.531s] Installing multicam_parallel_node script to /home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/huskybot_multicam_parallel
+[14.532s] Installing single_camera_processor script to /home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/huskybot_multicam_parallel
+[14.533s] 
+[14.534s] Installed /home/jezzy/huskybot_ws/build/huskybot_multicam_parallel
+[14.535s] running symlink_data
+[14.752s] Invoked command in '/home/jezzy/huskybot_ws/build/huskybot_multicam_parallel' returned '0': PYTHONPATH=/home/jezzy/huskybot_ws/build/huskybot_multicam_parallel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jezzy/huskybot_ws/install/huskybot_multicam_parallel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/jezzy/huskybot_ws/build/huskybot_multicam_parallel/build --no-deps symlink_data

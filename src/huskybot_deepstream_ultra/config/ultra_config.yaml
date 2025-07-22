@@ -1,0 +1,196 @@
+# Ultra-High Performance DeepStream Configuration
+# Optimized for Jetson AGX Orin 32GB + 6 Cameras + VLP-32C LiDAR
+
+# ============================================================================
+# PERFORMANCE CONFIGURATION
+# ============================================================================
+performance:
+  target_fps: 100
+  max_batch_size: 6
+  tensorrt_precision: "FP16"  # Options: FP32, FP16, INT8
+  enable_dla: true
+  dla_core: 0
+  cuda_streams: 4
+  thread_pool_size: 12
+  memory_pool_size: "8GB"
+  enable_zero_copy: true
+  enable_profiling: true
+
+# ============================================================================
+# CAMERA CONFIGURATION
+# ============================================================================
+cameras:
+  count: 6
+  resolution:
+    width: 1920
+    height: 1080
+  pixel_format: "RGB8"
+  fps: 100
+  buffer_size: 10
+  enable_hardware_sync: true
+  auto_exposure: false
+  exposure_time: 10000
+  gain: 1.0
+  
+  # Camera mapping (real hardware mapping)
+  mapping:
+    camera_front: "/dev/video2"      # Actually REAR
+    camera_front_left: "/dev/video1" # Actually REAR RIGHT
+    camera_left: "/dev/video0"       # Actually RIGHT
+    camera_rear: "/dev/video5"       # Actually FRONT
+    camera_rear_right: "/dev/video4" # Actually FRONT LEFT
+    camera_right: "/dev/video3"      # Actually LEFT
+
+# ============================================================================
+# YOLO SEGMENTATION CONFIGURATION
+# ============================================================================
+yolo:
+  model_path: "/home/jezzy/huskybot_ws/models/yolo11m-seg.engine"
+  confidence_threshold: 0.5
+  nms_threshold: 0.4
+  max_detections: 300
+  input_size: [640, 640]
+  
+  # COCO Classes with Colors
+  classes:
+    0: {name: "person", color: [255, 0, 0]}
+    1: {name: "bicycle", color: [0, 255, 0]}
+    2: {name: "car", color: [0, 0, 255]}
+    3: {name: "motorcycle", color: [255, 255, 0]}
+    4: {name: "airplane", color: [255, 0, 255]}
+    5: {name: "bus", color: [0, 255, 255]}
+    6: {name: "train", color: [128, 0, 0]}
+    7: {name: "truck", color: [0, 128, 0]}
+    8: {name: "boat", color: [0, 0, 128]}
+    9: {name: "traffic light", color: [128, 128, 0]}
+    # ... (continue for all 80 COCO classes)
+
+# ============================================================================
+# 3D COORDINATE CALCULATION
+# ============================================================================
+coordinate_system:
+  enable_3d_coordinates: true
+  enable_distance_calculation: true
+  reference_frame: "base_link"
+  
+  # Camera calibration parameters
+  camera_calibration:
+    focal_length: 2.8  # mm
+    sensor_width: 7.81  # mm
+    sensor_height: 5.85  # mm
+    camera_height: 1.5  # meters from ground
+    
+  # Camera positions relative to robot base (meters)
+  camera_positions:
+    camera_front: {x: 0.3, y: 0.0, z: 1.5, yaw: 0.0}
+    camera_front_left: {x: 0.15, y: 0.26, z: 1.5, yaw: 1.047}  # 60°
+    camera_left: {x: -0.15, y: 0.26, z: 1.5, yaw: 2.094}       # 120°
+    camera_rear: {x: -0.3, y: 0.0, z: 1.5, yaw: 3.14159}       # 180°
+    camera_rear_right: {x: -0.15, y: -0.26, z: 1.5, yaw: 4.189} # 240°
+    camera_right: {x: 0.15, y: -0.26, z: 1.5, yaw: 5.236}      # 300°
+
+# ============================================================================
+# LIDAR CONFIGURATION
+# ============================================================================
+lidar:
+  model: "VLP32C"
+  device_ip: "192.168.1.201"
+  port: 2368
+  rpm: 600
+  frame_id: "velodyne"
+  calibration_file: "/opt/ros/humble/share/velodyne_pointcloud/params/VLP32C_db.yaml"
+  organize_cloud: true
+
+# ============================================================================
+# DISPLAY CONFIGURATION
+# ============================================================================
+display:
+  enable_grid_display: true
+  grid_layout: "2x3"  # 2 rows, 3 columns
+  output_resolution:
+    width: 1920
+    height: 1080
+  
+  # Grid positions for cameras
+  grid_positions:
+    camera_front: [0, 0]      # Top-left
+    camera_front_left: [0, 1] # Top-center
+    camera_left: [0, 2]       # Top-right
+    camera_rear: [1, 0]       # Bottom-left
+    camera_rear_right: [1, 1] # Bottom-center
+    camera_right: [1, 2]      # Bottom-right
+  
+  # Visualization options
+  show_bounding_boxes: true
+  show_segmentation_masks: true
+  show_confidence_scores: true
+  show_distance_info: true
+  show_3d_coordinates: true
+  mask_alpha: 0.5
+
+# ============================================================================
+# OUTPUT CONFIGURATION
+# ============================================================================
+output:
+  format: "english"
+  terminal_output: true
+  log_detections: true
+  
+  # Terminal output template
+  output_template: "Camera {camera_name}, Class={class_name}, Confidence={confidence:.2f}, Distance: {distance:.2f} m, Coordinate: ({x:.2f}, {y:.2f}, {z:.2f})"
+  
+  # ROS topics
+  topics:
+    segmentation_output: "/huskybot/{camera_name}/segmentation_output"
+    detection_info: "/huskybot/ultra_deepstream/detections"
+    grid_display: "/huskybot/ultra_deepstream/grid_display"
+    performance_stats: "/huskybot/ultra_deepstream/performance"
+
+# ============================================================================
+# JETSON OPTIMIZATION
+# ============================================================================
+jetson:
+  nvpmodel: 0  # MAXN mode
+  jetson_clocks: true
+  fan_speed: "max"
+  gpu_memory_fraction: 0.9
+  cpu_governor: "performance"
+  enable_dla: true
+  dla_cores: [0, 1]
+
+# ============================================================================
+# DEEPSTREAM CONFIGURATION
+# ============================================================================
+deepstream:
+  config_file: "/opt/nvidia/deepstream/deepstream/samples/configs/deepstream-app/config_infer_primary.txt"
+  batch_size: 6
+  interval: 0  # Infer every frame
+  network_mode: 0  # FP32=0, FP16=1, INT8=2
+  
+  # Tracker configuration
+  tracker:
+    enable: true
+    tracker_width: 640
+    tracker_height: 384
+    ll_config_file: "/opt/nvidia/deepstream/deepstream/samples/configs/deepstream-app/tracker_config.yml"
+    ll_lib_file: "/opt/nvidia/deepstream/deepstream/lib/libnvds_nvmultiobjecttracker.so"
+
+# ============================================================================
+# QUALITY SETTINGS
+# ============================================================================
+quality:
+  max_resolution: true
+  max_fov: true
+  high_quality_masks: true
+  anti_aliasing: true
+  color_accuracy: "high"
+  
+# ============================================================================
+# LOGGING CONFIGURATION
+# ============================================================================
+logging:
+  level: "INFO"  # DEBUG, INFO, WARN, ERROR
+  log_performance: true
+  log_detections: false
+  log_file: "/tmp/huskybot_ultra_performance.log"
+  max_log_size: "100MB"

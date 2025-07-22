@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+huskybot_multicam_parallel/__init__.py
+huskybot_multicam_parallel/multicam_parallel_node.py
+huskybot_multicam_parallel/single_camera_processor.py
+huskybot_multicam_parallel.egg-info/PKG-INFO
+huskybot_multicam_parallel.egg-info/SOURCES.txt
+huskybot_multicam_parallel.egg-info/dependency_links.txt
+huskybot_multicam_parallel.egg-info/entry_points.txt
+huskybot_multicam_parallel.egg-info/requires.txt
+huskybot_multicam_parallel.egg-info/top_level.txt
+huskybot_multicam_parallel.egg-info/zip-safe
+launch/multicam_parallel_pipeline.launch.py
+resource/huskybot_multicam_parallel

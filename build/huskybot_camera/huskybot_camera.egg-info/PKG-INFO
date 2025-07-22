@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: huskybot-camera
+Version: 0.0.1
+Summary: Publisher kamera Arducam IMX477 asli untuk pipeline Huskybot (360° array). Mendukung konfigurasi hexagonal dengan 6 kamera dan integrasi dengan YOLOv12 untuk deteksi objek. Kompatibel dengan ROS2 Humble, simulasi Gazebo, dan robot Husky A200 + Jetson AGX Orin.
+Home-page: UNKNOWN
+Maintainer: Jezzy Putra Munggaran
+Maintainer-email: mungguran.jezzy.putra@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+

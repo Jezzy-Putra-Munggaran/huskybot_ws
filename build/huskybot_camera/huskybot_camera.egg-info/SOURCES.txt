@@ -1,0 +1,15 @@
+README.md
+package.xml
+setup.cfg
+setup.py
+huskybot_camera/__init__.py
+huskybot_camera/multicamera_publisher.py
+huskybot_camera.egg-info/PKG-INFO
+huskybot_camera.egg-info/SOURCES.txt
+huskybot_camera.egg-info/dependency_links.txt
+huskybot_camera.egg-info/entry_points.txt
+huskybot_camera.egg-info/requires.txt
+huskybot_camera.egg-info/top_level.txt
+huskybot_camera.egg-info/zip-safe
+launch/camera.launch.py
+resource/huskybot_camera
