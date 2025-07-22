@@ -1,0 +1,12 @@
+[0.000000] (-) TimerEvent: {}
+[0.001780] (-) JobUnselected: {'identifier': 'huskybot_multicam_parallel'}
+[0.001959] (-) JobUnselected: {'identifier': 'ros_deep_learning'}
+[0.002065] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.002163] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.002259] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.002355] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.002450] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.002549] (huskybot_camera) JobQueued: {'identifier': 'huskybot_camera', 'dependencies': OrderedDict([('ros_deep_learning', '/home/jezzy/huskybot_ws/install/ros_deep_learning')])}
+[0.002728] (huskybot_camera) JobStarted: {'identifier': 'huskybot_camera'}
+[0.048226] (huskybot_camera) JobEnded: {'identifier': 'huskybot_camera', 'rc': 1}
+[0.050608] (-) EventReactorShutdown: {}

@@ -1,0 +1,33 @@
+[0.048s] Invoking command in '/home/jezzy/huskybot_ws/build/ros_deep_learning': /usr/bin/cmake /home/jezzy/huskybot_ws/src/ros_deep_learning -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jezzy/huskybot_ws/install/ros_deep_learning
+[0.651s] -- The C compiler identification is GNU 11.4.0
+[2.351s] -- The CXX compiler identification is GNU 11.4.0
+[3.541s] -- Detecting C compiler ABI info
+[3.995s] -- Detecting C compiler ABI info - done
+[4.010s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.012s] -- Detecting C compile features
+[4.019s] -- Detecting C compile features - done
+[4.032s] -- Detecting CXX compiler ABI info
+[4.584s] -- Detecting CXX compiler ABI info - done
+[4.602s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.603s] -- Detecting CXX compile features
+[4.605s] -- Detecting CXX compile features - done
+[8.512s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[8.512s]   By not providing "Findjetson-utils.cmake" in CMAKE_MODULE_PATH this project
+[8.512s]   has asked CMake to find a package configuration file provided by
+[8.512s]   "jetson-utils", but CMake did not find one.
+[8.513s] 
+[8.513s]   Could not find a package configuration file provided by "jetson-utils" with
+[8.513s]   any of the following names:
+[8.513s] 
+[8.513s]     jetson-utilsConfig.cmake
+[8.514s]     jetson-utils-config.cmake
+[8.514s] 
+[8.514s]   Add the installation prefix of "jetson-utils" to CMAKE_PREFIX_PATH or set
+[8.514s]   "jetson-utils_DIR" to a directory containing one of the above files.  If
+[8.514s]   "jetson-utils" provides a separate development package or SDK, be sure it
+[8.515s]   has been installed.
+[8.515s] 
+[8.515s] [0m
+[8.515s] -- Configuring incomplete, errors occurred!
+[8.515s] See also "/home/jezzy/huskybot_ws/build/ros_deep_learning/CMakeFiles/CMakeOutput.log".
+[8.521s] Invoked command in '/home/jezzy/huskybot_ws/build/ros_deep_learning' returned '1': /usr/bin/cmake /home/jezzy/huskybot_ws/src/ros_deep_learning -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jezzy/huskybot_ws/install/ros_deep_learning

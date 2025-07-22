@@ -11,21 +11,33 @@ package_name = 'huskybot_camera'  # Nama package, harus sama dengan nama folder 
 def validate_critical_files():  # Fungsi untuk validasi file-file penting sebelum instalasi
     """Validasi keberadaan file-file kritis untuk package."""
     critical_files = [  # List file-file yang wajib ada untuk package ini
-        'launch/multicamera.launch.py',  # Launch file utama multicamera
-        'launch/camera.launch.py',  # Launch file fallback/individual camera
         f'{package_name}/multicamera_publisher.py',  # Node utama multicamera publisher
         'package.xml',  # File manifest package ROS2
         'resource/' + package_name,  # Resource marker ROS2
     ]
+    
+    # Optional files - tidak wajib ada, tapi dicek
+    optional_files = [
+        'launch/multicamera.launch.py',  # Launch file utama multicamera
+        'launch/camera.launch.py',  # Launch file fallback/individual camera
+    ]
+    
     missing_files = []  # List file yang tidak ditemukan
     for file in critical_files:  # Cek setiap file penting
         if not os.path.exists(file):  # Jika file tidak ada
             missing_files.append(file)  # Tambahkan ke list file yang hilang
+    
     if missing_files:  # Jika ada file yang hilang
         print(f"\n[ERROR] File-file penting tidak ditemukan: {missing_files}")  # Tampilkan pesan error
         print("[ERROR] File-file ini diperlukan agar package berfungsi dengan benar!")
         print("[TIP] Periksa struktur package dan pastikan semua file ada di lokasi yang benar\n")
         raise FileNotFoundError(f"File penting hilang: {missing_files}")  # Stop build jika file penting hilang
+    
+    # Cek optional files dan beri warning saja
+    missing_optional = [f for f in optional_files if not os.path.exists(f)]
+    if missing_optional:
+        print(f"\n[WARNING] File optional tidak ditemukan: {missing_optional}")
+        print("[INFO] Package tetap bisa di-build tanpa file ini")
 
 # Jalankan validasi file penting sebelum setup
 validate_critical_files()  # Panggil fungsi validasi
@@ -53,6 +65,18 @@ log_dir = ensure_folder_permission(os.path.expanduser('~/huskybot_camera_log')) 
 readme_files = ['README.md'] if os.path.exists('README.md') else []  # List file README.md jika ada
 config_files = glob('config/*.yaml') if os.path.isdir('config') else []  # Cari semua file konfigurasi YAML jika ada
 
+# ===================== COLLECT LAUNCH FILES =====================
+launch_files = []  # List untuk launch files yang ada
+potential_launch_files = ['launch/multicamera.launch.py', 'launch/camera.launch.py']
+for launch_file in potential_launch_files:
+    if os.path.exists(launch_file):
+        launch_files.append(launch_file)
+
+if not launch_files:
+    print("[WARNING] Tidak ada launch files ditemukan di folder launch/")
+else:
+    print(f"[INFO] Launch files ditemukan: {launch_files}")
+
 # ===================== ERROR HANDLING: VALIDASI DEPENDENCY PYTHON =====================
 def validate_python_dependencies():  # Fungsi untuk validasi dependency Python utama
     """Validasi dependency Python utama (cv2, numpy, yaml, dsb)."""
@@ -75,12 +99,9 @@ setup(
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         # Instal package.xml dan README.md untuk metadata dan dokumentasi
         ('share/' + package_name, ['package.xml'] + readme_files),
-        # Instal semua launch files ke share/package_name/launch/
-        ('share/' + package_name + '/launch', [
-            'launch/multicamera.launch.py',
-            'launch/camera.launch.py',
-        ]),
-    ] + ([('share/' + package_name + '/config', config_files)] if config_files else []),  # Instal config files jika ada
+        # Instal launch files yang ada ke share/package_name/launch/
+    ] + ([('share/' + package_name + '/launch', launch_files)] if launch_files else [])
+      + ([('share/' + package_name + '/config', config_files)] if config_files else []),  # Instal config files jika ada
     install_requires=[
         'setuptools',  # Required untuk build Python packages
         'rclpy',  # ROS2 Python client library

@@ -1,0 +1,210 @@
+[0.502s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ros_deep_learning', '--symlink-install']
+[0.503s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ros_deep_learning'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x71de8944af80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71de895bfb50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71de895bfb50>>)
+[-0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[-0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[-0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[-0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[-0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[-0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[-0.847s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jezzy/huskybot_ws'
+[-0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[-0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[-0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[-0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[-0.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[-0.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[-0.825s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[-0.824s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[-0.824s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[-0.824s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[-0.823s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[-0.823s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[-0.822s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[-0.822s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[-0.822s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[-0.822s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[-0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[-0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[-0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[-0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[-0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[-0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[-0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[-0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extensions ['ignore', 'ignore_ament_install']
+[-0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extension 'ignore'
+[-0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extension 'ignore_ament_install'
+[-0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extensions ['colcon_pkg']
+[-0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extension 'colcon_pkg'
+[-0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extensions ['colcon_meta']
+[-0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extension 'colcon_meta'
+[-0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extensions ['ros']
+[-0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_camera) by extension 'ros'
+[-0.813s] DEBUG:colcon.colcon_core.package_identification:Package 'src/huskybot_camera' with type 'ros.ament_python' and name 'huskybot_camera'
+[-0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extensions ['ignore', 'ignore_ament_install']
+[-0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extension 'ignore'
+[-0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extension 'ignore_ament_install'
+[-0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extensions ['colcon_pkg']
+[-0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extension 'colcon_pkg'
+[-0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extensions ['colcon_meta']
+[-0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extension 'colcon_meta'
+[-0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extensions ['ros']
+[-0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/huskybot_multicam_parallel) by extension 'ros'
+[-0.810s] DEBUG:colcon.colcon_core.package_identification:Package 'src/huskybot_multicam_parallel' with type 'ros.ament_python' and name 'huskybot_multicam_parallel'
+[-0.810s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extensions ['ignore', 'ignore_ament_install']
+[-0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extension 'ignore'
+[-0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extension 'ignore_ament_install'
+[-0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extensions ['colcon_pkg']
+[-0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extension 'colcon_pkg'
+[-0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extensions ['colcon_meta']
+[-0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extension 'colcon_meta'
+[-0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extensions ['ros']
+[-0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_deep_learning) by extension 'ros'
+[-0.807s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_deep_learning' with type 'ros.catkin' and name 'ros_deep_learning'
+[-0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[-0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore'
+[-0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore_ament_install'
+[-0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_pkg']
+[-0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_pkg'
+[-0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_meta']
+[-0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_meta'
+[-0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ros']
+[-0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ros'
+[-0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['cmake', 'python']
+[-0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'cmake'
+[-0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python'
+[-0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['python_setup_py']
+[-0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python_setup_py'
+[-0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore'
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore_ament_install'
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_pkg']
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_pkg'
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_meta']
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_meta'
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ros']
+[-0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ros'
+[-0.802s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne' with type 'ros.ament_cmake' and name 'velodyne'
+[-0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ignore', 'ignore_ament_install']
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore'
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore_ament_install'
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_pkg']
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_pkg'
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_meta']
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_meta'
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ros']
+[-0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ros'
+[-0.799s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_driver' with type 'ros.ament_cmake' and name 'velodyne_driver'
+[-0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[-0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore'
+[-0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore_ament_install'
+[-0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_pkg']
+[-0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_pkg'
+[-0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_meta']
+[-0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_meta'
+[-0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ros']
+[-0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ros'
+[-0.796s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_laserscan' with type 'ros.ament_cmake' and name 'velodyne_laserscan'
+[-0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore'
+[-0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore_ament_install'
+[-0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_pkg']
+[-0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_pkg'
+[-0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_meta']
+[-0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_meta'
+[-0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ros']
+[-0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ros'
+[-0.793s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_msgs' with type 'ros.ament_cmake' and name 'velodyne_msgs'
+[-0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ignore', 'ignore_ament_install']
+[-0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore'
+[-0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore_ament_install'
+[-0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_pkg']
+[-0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_pkg'
+[-0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_meta']
+[-0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_meta'
+[-0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ros']
+[-0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ros'
+[-0.788s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_pointcloud' with type 'ros.ament_cmake' and name 'velodyne_pointcloud'
+[-0.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[-0.788s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[-0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[-0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[-0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[-0.730s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'huskybot_multicam_parallel' in 'src/huskybot_multicam_parallel'
+[-0.730s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_laserscan' in 'src/velodyne/velodyne_laserscan'
+[-0.730s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_msgs' in 'src/velodyne/velodyne_msgs'
+[-0.730s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'huskybot_camera' in 'src/huskybot_camera'
+[-0.730s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_driver' in 'src/velodyne/velodyne_driver'
+[-0.730s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne_pointcloud' in 'src/velodyne/velodyne_pointcloud'
+[-0.730s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'velodyne' in 'src/velodyne/velodyne'
+[-0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[-0.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[-0.724s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 17 installed packages in /home/jezzy/husky_ws/turtlebot3/install
+[-0.723s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/jezzy/husky_ws/lintic/install
+[-0.719s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 415 installed packages in /opt/ros/humble
+[-0.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[-0.617s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'cmake_args' from command line to 'None'
+[-0.617s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'cmake_target' from command line to 'None'
+[-0.616s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-0.616s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'cmake_clean_cache' from command line to 'False'
+[-0.616s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'cmake_clean_first' from command line to 'False'
+[-0.616s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'cmake_force_configure' from command line to 'False'
+[-0.616s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'ament_cmake_args' from command line to 'None'
+[-0.616s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'catkin_cmake_args' from command line to 'None'
+[-0.616s] Level 5:colcon.colcon_core.verb:set package 'ros_deep_learning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-0.616s] DEBUG:colcon.colcon_core.verb:Building package 'ros_deep_learning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jezzy/huskybot_ws/build/ros_deep_learning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jezzy/huskybot_ws/install/ros_deep_learning', 'merge_install': False, 'path': '/home/jezzy/huskybot_ws/src/ros_deep_learning', 'symlink_install': True, 'test_result_base': None}
+[-0.616s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[-0.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[-0.613s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/jezzy/huskybot_ws/src/ros_deep_learning' with build type 'catkin'
+[-0.613s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jezzy/huskybot_ws/src/ros_deep_learning'
+[-0.605s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[-0.603s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-0.602s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jezzy/huskybot_ws/build/ros_deep_learning': /usr/bin/cmake /home/jezzy/huskybot_ws/src/ros_deep_learning -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jezzy/huskybot_ws/install/ros_deep_learning
+[7.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jezzy/huskybot_ws/build/ros_deep_learning' returned '1': /usr/bin/cmake /home/jezzy/huskybot_ws/src/ros_deep_learning -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jezzy/huskybot_ws/install/ros_deep_learning
+[7.946s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_deep_learning)
+[7.963s] Level 1:colcon.colcon_core.environment:checking '/home/jezzy/huskybot_ws/install/ros_deep_learning' for CMake module files
+[7.964s] Level 1:colcon.colcon_core.environment:checking '/home/jezzy/huskybot_ws/install/ros_deep_learning' for CMake config files
+[7.965s] Level 1:colcon.colcon_core.environment:checking '/home/jezzy/huskybot_ws/install/ros_deep_learning/bin'
+[7.966s] Level 1:colcon.colcon_core.environment:checking '/home/jezzy/huskybot_ws/install/ros_deep_learning/lib/pkgconfig/ros_deep_learning.pc'
+[7.967s] Level 1:colcon.colcon_core.environment:checking '/home/jezzy/huskybot_ws/install/ros_deep_learning/lib/python3.10/site-packages'
+[7.968s] Level 1:colcon.colcon_core.environment:checking '/home/jezzy/huskybot_ws/install/ros_deep_learning/bin'
+[7.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/jezzy/huskybot_ws/install/ros_deep_learning/share/ros_deep_learning/package.ps1'
+[7.974s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jezzy/huskybot_ws/install/ros_deep_learning/share/ros_deep_learning/package.dsv'
+[7.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/jezzy/huskybot_ws/install/ros_deep_learning/share/ros_deep_learning/package.sh'
+[7.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/jezzy/huskybot_ws/install/ros_deep_learning/share/ros_deep_learning/package.bash'
+[7.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/jezzy/huskybot_ws/install/ros_deep_learning/share/ros_deep_learning/package.zsh'
+[7.985s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jezzy/huskybot_ws/install/ros_deep_learning/share/colcon-core/packages/ros_deep_learning)
+[7.998s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.998s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.998s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[7.999s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.173s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.173s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.174s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.174s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.176s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[8.177s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.177s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jezzy/huskybot_ws/install/local_setup.ps1'
+[8.179s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jezzy/huskybot_ws/install/_local_setup_util_ps1.py'
+[8.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jezzy/huskybot_ws/install/setup.ps1'
+[8.194s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jezzy/huskybot_ws/install/local_setup.sh'
+[8.195s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jezzy/huskybot_ws/install/_local_setup_util_sh.py'
+[8.196s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jezzy/huskybot_ws/install/setup.sh'
+[8.202s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jezzy/huskybot_ws/install/local_setup.bash'
+[8.204s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jezzy/huskybot_ws/install/setup.bash'
+[8.211s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jezzy/huskybot_ws/install/local_setup.zsh'
+[8.212s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jezzy/huskybot_ws/install/setup.zsh'

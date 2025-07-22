@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000863] (-) JobUnselected: {'identifier': 'huskybot_camera'}
+[0.001109] (-) JobUnselected: {'identifier': 'huskybot_multicam_parallel'}
+[0.001794] (-) JobUnselected: {'identifier': 'velodyne'}
+[0.001952] (-) JobUnselected: {'identifier': 'velodyne_driver'}
+[0.002083] (-) JobUnselected: {'identifier': 'velodyne_laserscan'}
+[0.002182] (-) JobUnselected: {'identifier': 'velodyne_msgs'}
+[0.002278] (-) JobUnselected: {'identifier': 'velodyne_pointcloud'}
+[0.002381] (ros_deep_learning) JobQueued: {'identifier': 'ros_deep_learning', 'dependencies': OrderedDict()}
+[0.002485] (ros_deep_learning) JobStarted: {'identifier': 'ros_deep_learning'}
+[0.038310] (ros_deep_learning) JobProgress: {'identifier': 'ros_deep_learning', 'progress': 'cmake'}
+[0.043178] (ros_deep_learning) Command: {'cmd': ['/usr/bin/cmake', '/home/jezzy/huskybot_ws/src/ros_deep_learning', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/jezzy/huskybot_ws/install/ros_deep_learning'], 'cwd': '/home/jezzy/huskybot_ws/build/ros_deep_learning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jezzy'), ('SSH_AGENT_PID', '7226'), ('GIT_ASKPASS', '/home/jezzy/.vscode-server/bin/7adae6a56e34cb64d08899664b814cf620465925/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/lib:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/jezzy'), ('OLDPWD', '/home/jezzy/huskybot_ws/src'), ('TERM_PROGRAM_VERSION', '1.102.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e537b643-b427-40c1-a90e-00062aa141c7.sock'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/jezzy/.vscode-server/bin/7adae6a56e34cb64d08899664b814cf620465925/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/jezzy/.vscode-server/bin/7adae6a56e34cb64d08899664b814cf620465925/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/jezzy/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jezzy/husky_ws/turtlebot3/install:/home/jezzy/husky_ws/lintic/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jezzy'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/3938_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('LIBGL_ALWAYS_INDIRECT', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/jezzy/.vscode-server/bin/7adae6a56e34cb64d08899664b814cf620465925/bin/remote-cli:/home/jezzy/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.5.10021.0_x64__79rhkp1fndgsc:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Java/jdk-20/bin:/mnt/c/Program Files/MATLAB/R2022a/runtime/win64:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/mingw64/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Users/Jezzy/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/Jezzy/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/Jezzy/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/Jezzy/AppData/Local/Microsoft/WindowsApps:/mnt/c/mingw64/bin:/mnt/c/Users/Jezzy/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Jezzy/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Jezzy/.dotnet/tools:/mnt/c/Users/Jezzy/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/Jezzy/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/snap/bin:/home/jezzy/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/jezzy/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', '172.26.96.1:0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/jezzy/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-97aa5c864e9fd010.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dae02f7903.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXsKdiWH/agent.7225'), ('AMENT_PREFIX_PATH', '/home/jezzy/husky_ws/lintic/install/yolosed:/home/jezzy/husky_ws/lintic/install/visual:/home/jezzy/husky_ws/lintic/install/segnet:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/segtect:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/jezzy/huskybot_ws/build/ros_deep_learning'), ('TURTLEBOT3_MODEL', 'multicam'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jezzy/husky_ws/lintic/install/yolosed/lib/python3.10/site-packages:/home/jezzy/husky_ws/lintic/install/visual/lib/python3.10/site-packages:/home/jezzy/husky_ws/lintic/install/segnet/lib/python3.10/site-packages:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_example/lib/python3.10/site-packages:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/jezzy/husky_ws/turtlebot3/install/segtect/lib/python3.10/site-packages:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/jezzy/husky_ws/turtlebot3/install/autonomous_exploration/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jezzy/husky_ws/turtlebot3/install/turtlebot3:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_simulations:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_bringup:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_navigation2:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_fake_node:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_msgs:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_gazebo:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_description:/home/jezzy/husky_ws/turtlebot3/install/turtlebot3_cartographer:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_examples:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk_custom_interfaces:/home/jezzy/husky_ws/turtlebot3/install/dynamixel_sdk'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[0.097757] (-) TimerEvent: {}
+[0.198605] (-) TimerEvent: {}
+[0.299460] (-) TimerEvent: {}
+[0.400338] (-) TimerEvent: {}
+[0.501394] (-) TimerEvent: {}
+[0.602145] (-) TimerEvent: {}
+[0.653459] (ros_deep_learning) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.702371] (-) TimerEvent: {}
+[0.803346] (-) TimerEvent: {}
+[0.904068] (-) TimerEvent: {}
+[1.004835] (-) TimerEvent: {}
+[1.105562] (-) TimerEvent: {}
+[1.206559] (-) TimerEvent: {}
+[1.307301] (-) TimerEvent: {}
+[1.408551] (-) TimerEvent: {}
+[1.509798] (-) TimerEvent: {}
+[1.612131] (-) TimerEvent: {}
+[1.713236] (-) TimerEvent: {}
+[1.813858] (-) TimerEvent: {}
+[1.914814] (-) TimerEvent: {}
+[2.015673] (-) TimerEvent: {}
+[2.116648] (-) TimerEvent: {}
+[2.217571] (-) TimerEvent: {}
+[2.318224] (-) TimerEvent: {}
+[2.353423] (ros_deep_learning) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.418488] (-) TimerEvent: {}
+[2.519163] (-) TimerEvent: {}
+[2.619735] (-) TimerEvent: {}
+[2.720434] (-) TimerEvent: {}
+[2.821062] (-) TimerEvent: {}
+[2.921714] (-) TimerEvent: {}
+[3.022398] (-) TimerEvent: {}
+[3.123101] (-) TimerEvent: {}
+[3.224467] (-) TimerEvent: {}
+[3.325711] (-) TimerEvent: {}
+[3.426598] (-) TimerEvent: {}
+[3.527280] (-) TimerEvent: {}
+[3.543170] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.627598] (-) TimerEvent: {}
+[3.728722] (-) TimerEvent: {}
+[3.829325] (-) TimerEvent: {}
+[3.930000] (-) TimerEvent: {}
+[3.996785] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.012434] (ros_deep_learning) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.014379] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.020916] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.030259] (-) TimerEvent: {}
+[4.034280] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.130517] (-) TimerEvent: {}
+[4.231198] (-) TimerEvent: {}
+[4.332417] (-) TimerEvent: {}
+[4.433290] (-) TimerEvent: {}
+[4.533888] (-) TimerEvent: {}
+[4.586316] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.604531] (ros_deep_learning) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.605546] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.606878] (ros_deep_learning) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.634116] (-) TimerEvent: {}
+[4.734795] (-) TimerEvent: {}
+[4.835562] (-) TimerEvent: {}
+[4.936444] (-) TimerEvent: {}
+[5.037161] (-) TimerEvent: {}
+[5.137776] (-) TimerEvent: {}
+[5.238395] (-) TimerEvent: {}
+[5.339109] (-) TimerEvent: {}
+[5.439908] (-) TimerEvent: {}
+[5.540905] (-) TimerEvent: {}
+[5.641444] (-) TimerEvent: {}
+[5.742131] (-) TimerEvent: {}
+[5.842752] (-) TimerEvent: {}
+[5.943490] (-) TimerEvent: {}
+[6.044174] (-) TimerEvent: {}
+[6.144886] (-) TimerEvent: {}
+[6.245505] (-) TimerEvent: {}
+[6.346134] (-) TimerEvent: {}
+[6.446822] (-) TimerEvent: {}
+[6.547521] (-) TimerEvent: {}
+[6.648221] (-) TimerEvent: {}
+[6.749161] (-) TimerEvent: {}
+[6.849781] (-) TimerEvent: {}
+[6.950435] (-) TimerEvent: {}
+[7.051395] (-) TimerEvent: {}
+[7.152158] (-) TimerEvent: {}
+[7.252975] (-) TimerEvent: {}
+[7.353646] (-) TimerEvent: {}
+[7.454291] (-) TimerEvent: {}
+[7.555044] (-) TimerEvent: {}
+[7.655822] (-) TimerEvent: {}
+[7.756678] (-) TimerEvent: {}
+[7.857383] (-) TimerEvent: {}
+[7.957995] (-) TimerEvent: {}
+[8.058626] (-) TimerEvent: {}
+[8.159298] (-) TimerEvent: {}
+[8.260100] (-) TimerEvent: {}
+[8.360935] (-) TimerEvent: {}
+[8.461512] (-) TimerEvent: {}
+[8.513807] (ros_deep_learning) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:6 (find_package):\n'}
+[8.514367] (ros_deep_learning) StderrLine: {'line': b'  By not providing "Findjetson-utils.cmake" in CMAKE_MODULE_PATH this project\n'}
+[8.514663] (ros_deep_learning) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[8.514864] (ros_deep_learning) StderrLine: {'line': b'  "jetson-utils", but CMake did not find one.\n'}
+[8.515051] (ros_deep_learning) StderrLine: {'line': b'\n'}
+[8.515218] (ros_deep_learning) StderrLine: {'line': b'  Could not find a package configuration file provided by "jetson-utils" with\n'}
+[8.515367] (ros_deep_learning) StderrLine: {'line': b'  any of the following names:\n'}
+[8.515602] (ros_deep_learning) StderrLine: {'line': b'\n'}
+[8.515780] (ros_deep_learning) StderrLine: {'line': b'    jetson-utilsConfig.cmake\n'}
+[8.515934] (ros_deep_learning) StderrLine: {'line': b'    jetson-utils-config.cmake\n'}
+[8.516109] (ros_deep_learning) StderrLine: {'line': b'\n'}
+[8.516295] (ros_deep_learning) StderrLine: {'line': b'  Add the installation prefix of "jetson-utils" to CMAKE_PREFIX_PATH or set\n'}
+[8.516473] (ros_deep_learning) StderrLine: {'line': b'  "jetson-utils_DIR" to a directory containing one of the above files.  If\n'}
+[8.516691] (ros_deep_learning) StderrLine: {'line': b'  "jetson-utils" provides a separate development package or SDK, be sure it\n'}
+[8.516896] (ros_deep_learning) StderrLine: {'line': b'  has been installed.\n'}
+[8.517186] (ros_deep_learning) StderrLine: {'line': b'\n'}
+[8.517369] (ros_deep_learning) StderrLine: {'line': b'\x1b[0m\n'}
+[8.517564] (ros_deep_learning) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.517838] (ros_deep_learning) StdoutLine: {'line': b'See also "/home/jezzy/huskybot_ws/build/ros_deep_learning/CMakeFiles/CMakeOutput.log".\n'}
+[8.522682] (ros_deep_learning) CommandEnded: {'returncode': 1}
+[8.562026] (-) TimerEvent: {}
+[8.599526] (ros_deep_learning) JobEnded: {'identifier': 'ros_deep_learning', 'rc': 1}
+[8.611197] (-) EventReactorShutdown: {}
